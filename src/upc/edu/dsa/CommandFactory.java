@@ -1,8 +1,9 @@
-package com.company;
+package upc.edu.dsa;
 import java.util.HashMap;
 
 public class CommandFactory {
-    private HashMap<String,Command> cache = new HashMap<>(3);
+
+    private Cache cache = CacheImpl.getInstance();
 
     public Command newInstance(String commandType) throws ClassNotFoundException, IllegalAccessException, InstantiationException{
         Command c = this.cache.get(commandType);

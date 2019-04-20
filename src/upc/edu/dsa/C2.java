@@ -1,4 +1,4 @@
-package com.company;
+package upc.edu.dsa;
 
 public class C2 implements Command {
     @Override
